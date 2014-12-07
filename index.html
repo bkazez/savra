@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>σαύρα</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/videojs.errors.css">
+    
+    <script src="js/vendor/custom.modernizr.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/videojs.errors.js"></script>
+
+</head>
+<body>
+    <h4 id="navbarTitle"></h4>
+    <fieldset id="videoForm">
+      <label>Movie File Path</label>
+      <input type="text" id="videoURL" />
+      <label>ID Number</label> <input type="text" id="animalID" />
+      <label>Frame Rate</label> <input type="text" id="fps" />
+      <label>Video Width</label> <input type="text" id="videoWidth" />
+      <label>Video Height</label> <input type="text" id="videoHeight" />
+      <select id="deltaFrames">
+        <option value="1" selected="selected">1 frame</option>
+        <option value="2">2 frames</option>
+        <option value="5">5 frames</option>
+      </select>
+      <p><a class="small button video-load" id="video-load">Load</a></p>
+    </fieldset>
+    <div id="scaleForm">
+      <input type="text" id="scaleReference" value="10" /> cm = <span id="scale">?</span> px<br>
+      <a class="small button video-load" id="set-scale">Set Scale</a></p>
+    </div>
+
+<div id="videoUI">
+    <div id="video-wrapper">
+      <video id="video" class="video-js vjs-default-skin" controls preload="auto" data-setup=''>
+      </video>
+    </div>
+    <p><a class="small button video-load" id="restart">« Restart</a></p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h4>Summary</h4>
+        <textarea id="outputSummary" class="output"></textarea>
+        <!-- <a href="#" id="copySummary">Copy Summary</a> -->
+      </div>
+      <div class="large-6 columns">
+        <h4>Details</h4>
+        <textarea id="outputDetails" class="output"></textarea>
+        <!-- <a href="#" id="copyDetails">Copy Details</a> -->
+      </div>
+  </div>
+</div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.alerts.js"></script>
+  <script src="js/foundation/foundation.clearing.js"></script>
+  <script src="js/foundation/foundation.cookie.js"></script>
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  <script src="js/foundation/foundation.forms.js"></script>
+  <script src="js/foundation/foundation.joyride.js"></script>
+  <script src="js/foundation/foundation.magellan.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>
+  <script src="js/foundation/foundation.section.js"></script>
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/foundation/foundation.interchange.js"></script>
+  <script src="js/jquery.zclip.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

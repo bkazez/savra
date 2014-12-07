@@ -1,0 +1,62 @@
+body {
+    margin: 1em;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#video {
+    pointer-events: none;
+}
+
+#videoUI {
+    cursor: crosshair;
+}
+
+.video-js.vjs-default-skin .vjs-big-play-button { display: none; }
+
+.output {
+    display: block;
+    background-color: #efefef;
+    font-family: monospace;
+    padding: 3px;
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+}
+
+#outputSummary {
+    height: 150px;
+}
+
+.header .right {
+    text-align: right;
+}
+
+.header input {
+    display: inline;
+    width: 300px;
+}
+
+select {
+    display: inline;
+    width: auto;
+}
+
+#videoForm {
+    display: none;
+}
+
+#scaleForm {
+    display: none;
+}
+
+#videoUI {
+    display: none;
+}
+
+#scaleReference {
+    width: 4em;
+    display: inline;
+}
